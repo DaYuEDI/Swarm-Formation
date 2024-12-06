@@ -10,7 +10,6 @@ global_goal:
   relative_pos_4 : {x: -1.7321, y: 1.0, z: 0.0}
   relative_pos_5 : {x: 0.0, y: 2.0, z: 0.0}
   relative_pos_6 : {x: 1.7321, y: 1.0, z: 0.0} 
-  # relative_pos_6 : {x: 0, y: 0, z: 0.0} 
 
 # map_size_x          : 70.0
 # map_size_y          : 30.0
