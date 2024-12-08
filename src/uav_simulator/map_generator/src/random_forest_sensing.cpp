@@ -191,7 +191,7 @@ void RandomMapGenerateCylinder()
   rand_y = uniform_real_distribution<double>(_y_l, _y_h);
   rand_w = uniform_real_distribution<double>(_w_l, _w_h);
   rand_h = uniform_real_distribution<double>(_h_l, _h_h);
-  rand_inf = uniform_real_distribution<double>(0.5, 1.5);
+  rand_inf = uniform_real_distribution<double>(0.5, 1.0);
 
   rand_radius_ = uniform_real_distribution<double>(radius_l_, radius_h_);
   rand_radius2_ = uniform_real_distribution<double>(radius_l_, 1.2);
@@ -427,11 +427,18 @@ int main(int argc, char **argv)
   n.param("pub_rate", _pub_rate, 10.0);
   n.param("min_distance", _min_dist, 1.0);
 
-  _x_l = -_x_size / 2.0;
-  _x_h = +_x_size / 2.0;
+  _x_l = 1.0;
+  _x_h = 3.0;
 
-  _y_l = -_y_size / 2.0;
-  _y_h = +_y_size / 2.0;
+  _y_l = 1.0;
+  _y_h = 3.0;
+
+  _w_l = 0.2;
+  _w_h = 0.3;
+
+  _h_l = 1.2;
+  _h_h = 1.4;
+
 
   _obs_num = min(_obs_num, (int)_x_size * 10);
   _z_limit = _z_size;

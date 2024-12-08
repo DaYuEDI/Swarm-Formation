@@ -4,22 +4,22 @@ global_goal:
   swarm_central_pos: {x: 5.0, y: 5.0, z: 1.3}
   swarm_scale : 1.0
   relative_pos_0 : {x: 0.0, y: 0.0, z: 0.0}
-  relative_pos_1 : {x: -0.1, y: -0.17, z: 0.0}
-  relative_pos_2 : {x: 0.1, y: -0.17, z: 0.0}
-  relative_pos_3 : {x: -0.2, y: -0.346, z: 0.0} 
-  relative_pos_4 : {x: 0.0, y: -0.346, z: 0.0}
-  relative_pos_5 : {x: 0.2, y: -0.346, z: 0.0}
+  relative_pos_1 : {x: -0.19, y: -0.05, z: 0.0}
+  relative_pos_2 : {x: -0.05, y: -0.19, z: 0.0}
+  relative_pos_3 : {x: -0.386, y: -0.105, z: 0.0} 
+  relative_pos_4 : {x: -0.245, y: -0.245, z: 0.0}
+  relative_pos_5 : {x: -0.103, y: -0.386, z: 0.0}
 
 optimization:
-  formation_type      : 1
+  formation_type      : 2
   weight_obstacle     : 50000.0
   weight_swarm        : 50000.0
   weight_feasibility  : 10000.0
   weight_sqrvariance  : 10000.0
   weight_time         : 80.0
   weight_formation    : 15000.0
-  obstacle_clearance  : 0.1
-  swarm_clearance     : 0.1
+  obstacle_clearance  : 0.5
+  swarm_clearance     : 0.05
 
 fsm:
   replan_trajectory_time : 0.1    # s, the max time of replanning trajectory

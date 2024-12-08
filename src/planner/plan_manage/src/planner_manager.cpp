@@ -242,6 +242,7 @@ namespace ego_planner
     {
       visualization_->displayFailedList(cstr_pts, 0);
       continous_failures_count_++;
+      ROS_INFO("****Failed in Optimize*****");
       return false;
     }
 
