@@ -30,7 +30,7 @@
     <arg name="weight_formation"/>
     <arg name="obstacle_clearance"/>
     <arg name="swarm_clearance"/>
-    <!-- <arg name="replan_trajectory_time"/> -->
+    <arg name="replan_trajectory_time"/>
     
     <!-- topic of your odometry such as VIO or LIO -->
     <arg name="odom_topic"/>
